@@ -185,13 +185,13 @@ public:
 		cout << "Book added successfully\n";
 	}
 	const void search() {
-		cout << "\n Enter title of the book you are searching :";
+		cout << "\nEnter title of the book you are searching :";
 		string title; cin >> title;
 		if (!books.count(title)) {
-			cout << "No such book.\n";
+			cout << "\nNo such book.\n";
 			return;
 		}
-		cout << "Yes we have this book .\n";
+		cout << "\nYes we have this book .\n";
 	}
 	const  map<string, Book>&available_bboks() const {
 		return books;
