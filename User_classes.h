@@ -126,6 +126,7 @@ public:
 	}
 	const void clear_history() {
 		history.clear();
+		cout<<"\nYour history has been cleared\n";
 	}
 	void list_available_books(const  map<string, Book>& available_books) {
 		int i = 1;
