@@ -211,7 +211,7 @@ private:
 	map<string, User*>users_database;
 	User* current_user;
 	void free_database() {
-		for (auto pair : users_database) {
+		for (auto &pair : users_database) {
 			delete pair.second;
 		}
 		users_database.clear();
